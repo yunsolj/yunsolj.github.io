@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<title>CSS3 Property Basic</title>
+<style>
+    body {
+  font-family: '카페24 클래식타입 OTF';
+  background-image: url(./img/ee.jpg)
+}
+.clearfix::after{content: ''; display: block; clear: both;}
+.container{
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+.h_top{
+    text-align: center;
+}
+li{
+    list-style: none;
+}
+.nav{
+    width: 100%;
+    padding-top: 50px;
+}
+.gnb{
+    text-align: center;
+}
+.gnb li{
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    text-align: center;
+}
+.gnb li:last-child{
+    margin-right: 50px;
+}
+.gnb li{
+            background-color: rgb(255, 23, 112);
+            width: 130px;
+            height: 50px;
+        }
+
+.gnb li a{
+            padding-right: 18px;
+            color: white;
+            font-size: 15px;
+            line-height: 50px;
+            text-decoration:none;
+        }
+.gnb li:hover{
+            background-color: #CC8EFF;
+        }        
+.acle_t{
+    padding-top: 50px;
+}
+.acle_t h1{
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+}
+.acle_item>li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 60px;
+    width: 350px;
+    background-color: #ffffff6f;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+    
+
+}
+.acle_item>li>img {
+    max-width: 100%; /* 이미지가 부모 요소의 너비를 초과하지 않도록 설정 */
+    height: auto; /* 이미지 비율 유지 */
+}
+.acle_item>li:hover{
+    background-color: #ffffff;
+}
+.header {
+    color: #ffffff; /* 원하는 텍스트 색상을 여기에 설정 (예: 빨간색) */
+}
+li img {
+    margin-top: 20px; 
+}
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+    border-top: 2px solid rgb(255, 23, 112);
+    opacity: 50%;
+}
+ footer p {
+    opacity: 90%;
+ }
+
+
+</style>
+
+<body>
+    <header class="container">
+        <div class="h_top">
+            <div class="logo">
+                <h1>
+                    <a href="acc2.html">
+                        <img src='title.png' alt="logo">
+                    </a>
+                </h1>
+                <header class="container header">
+                    <p>シュガシュガルーン : 슈가슈가룬 : Sugar Sugar Rune</p>
+                    <p>슈가 슈가룬 쇼코룬 당신의 하트를 픽 업!</p>
+                </header>
+                
+                
+            </div>
+        </div>
+
+        <nav class="nav">
+            <ul class="gnb">
+                <li>
+                    <a href="Sugar Sugar Rune.html">
+                        슈가슈가룬
+                    </a>
+                </li>
+                <li>
+                    <a href="Introduction.html">
+                        등장인물
+                    </a>
+                </li>
+                <li>
+                    <a href="acc.html">
+                        에클이란?
+                    </a>
+                </li>
+                <li>
+                    <a href="gallery.html">
+                        갤러리
+                    </a>
+                </li>
+                <li>
+                    <a href="opening song.html">
+                        동영상
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="acle container">
+        <div class="acle_t">
+            <h1>Acle</h1>
+        </div>
+        <ul class="acle_item clearfix">
+            <li>
+                <img src="img/yell.png" alt="">
+            </li>
+            <li>
+                <img src="img/orn.png" alt="">
+            </li>
+            <li>
+                <img src="img/gre.png" alt="">
+            </li>
+            <li>
+                <img src="img/bow.png" alt="">
+            </li>
+            <li>
+                <img src="img/pin.png" alt="">
+            </li>
+            <li>
+                <img src="img/blu.png" alt="">
+            </li>
+            <li>
+                <img src="img/pup.png" alt="">
+            </li>
+            <li>
+                <img src="img/red.png" alt="">
+            </li>
+            <li>
+                <img src="img/sky.png" alt="">
+            </li>
+            <li>
+                <img src="img/wh.png" alt="">
+            </li>
+            <li>
+                <img src="img/bla.png" alt="">
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <p>© 2023 슈가슈가룬</p>
+        <p>주소: 경기도 의왕시 계원대학로 66</p>
+        <p>이메일: yunsoljo09@kaywon.ac.kr</p>
+        
+    </footer>
+</body>

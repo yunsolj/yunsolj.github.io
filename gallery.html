@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<title>CSS3 Property Basic</title>
+<style>
+    body {
+  font-family: '카페24 클래식타입 OTF';
+  background-image: url(./img/ee.jpg)
+}
+.clearfix::after{content: ''; display: block; clear: both;}
+.container{
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+.h_top{
+    text-align: center;
+}
+li{
+    list-style: none;
+}
+.nav{
+    width: 100%;
+    padding-top: 50px;
+}
+.gnb{
+    text-align: center;
+}
+.gnb li{
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    text-align: center;
+}
+.gnb li:last-child{
+    margin-right: 50px;
+}
+.gnb li{
+            background-color: rgb(255, 23, 112);
+            width: 130px;
+            height: 50px;
+        }
+.gnb li a{
+            padding-right: 18px;
+            color: white;
+            font-size: 15px;
+            line-height: 50px;
+            text-decoration:none;
+        }
+.gnb li:hover{
+            background-color: #CC8EFF;
+        } 
+.acle_t{
+    padding-top: 50px;
+}
+.acle_t h1{
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+.acle_item>li {
+    float: left;
+    padding-left: 10px; 
+    width: calc(50%);
+    box-sizing: border-box; 
+}
+.acle_item>li>img{
+    width: 350px;
+}
+.header {
+    color: #ffffff;
+}
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+    border-top: 2px solid rgb(255, 23, 112);
+    opacity: 50%;
+}
+ footer p {
+    opacity: 90%;
+ }
+
+</style>
+
+<body>
+    <header class="container">
+        <div class="h_top">
+            <div class="logo">
+                <h1>
+                    <a href="acc2.html">
+                        <img src='title.png' alt="logo">
+                    </a>
+                </h1>
+                <header class="container header">
+                    <p>シュガシュガルーン : 슈가슈가룬 : Sugar Sugar Rune</p>
+                    <p>슈가 슈가룬 쇼코룬 당신의 하트를 픽 업!</p>
+                </header>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <ul class="gnb">
+                <li>
+                    <a href="Sugar Sugar Rune.html">
+                        슈가슈가룬
+                    </a>
+                </li>
+                <li>
+                    <a href="Introduction.html">
+                        등장인물
+                    </a>
+                </li>
+                <li>
+                    <a href="acc.html">
+                        에클이란?
+                    </a>
+                </li>
+                <li>
+                    <a href="gallery.html">
+                        갤러리
+                    </a>
+                </li>
+                <li>
+                    <a href="opening song.html">
+                        동영상
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="acle container">
+        <div class="acle_t">
+            <h1>gallery</h1>
+        </div>
+        <ul class="acle_item clearfix">
+           
+            <li>
+                <img src="img/g2.jpg" alt="">
+            </li>
+            <li>
+                <img src="img/g3.jpg" alt="">
+            </li>
+            <li>
+                <img src="img/g9.jpg" alt="">
+            </li>
+            <li>
+                <img src="img/g10.jpg" alt="">
+            </li>
+            <li>
+                <img src="img/g6.jpg" alt="">
+            </li>
+            <li>
+                <img src="img/g8.jpg" alt="">
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <p>© 2023 슈가슈가룬</p>
+        <p>주소: 경기도 의왕시 계원대학로 66</p>
+        <p>이메일: yunsoljo09@kaywon.ac.kr</p>
+        
+    </footer>
+</body>
